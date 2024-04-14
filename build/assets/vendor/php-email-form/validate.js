@@ -52,8 +52,11 @@
   function php_email_form_submit(thisForm, action, formData) {
     fetch(action, {
       method: 'POST',
-      body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      body: JSON.stringify(Object.fromEntries(formData)),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
     })
     .then(response => {
       if( response.ok ) {

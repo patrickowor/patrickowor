@@ -1,34 +1,13 @@
-const  express = require('express');
+const host = "0.0.0.0"
+const port = process.env.port||4000
+const app = require("./index.js")
 
-const cors = require('cors');
-const process = require("process")
-var bodyParser = require('body-parser');
-const sessions = require('express-session');
-const cookieParser = require("cookie-parser");
-require('dotenv').config()
-const app = express()
 
-app.use(cors({ origin: '*'}));
-app.use(bodyParser.json()); 
-app.use(bodyParser.urlencoded({ extended: true })); 
-
-// cookie parser middleware
-app.use(cookieParser());
-
-app.get('/api/', async (req, res)=> {
-    res.send("am alive")
+app.listen(port,host,  ()=>{
+    console.log(`running server at http://${host}:${port}`)
+    console.log(`running server at http://192.168.86.86:${port}`)
 })
 
 
 
 
-
-
-
-
-
-
-app.use('/', express.static('./build'))
-
-// Export the Express API
-module.exports = app;
