@@ -103,6 +103,13 @@
             <img src="${obj["image"]}" alt="${obj["name"]}">
           </div>
         `
+        obj?.moreimg?.forEach(element => {
+          document.getElementById("images").innerHTML += `
+          <div class="swiper-slide">
+            <img src="${element}" alt="${element}">
+          </div>
+        `
+        });
         document.getElementById("title").innerHTML = obj["name"];
         document.getElementById("title2").innerHTML = obj["name"];
         document.getElementById("category").innerHTML += obj["type"]?.toUpperCase() + (obj["other"] != undefined ? "&  " + obj["other"].toUpperCase() : "");
