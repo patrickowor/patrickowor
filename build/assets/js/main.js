@@ -187,7 +187,7 @@
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener('load', () => {
+  window.addEventListener('projectsdataLoaded', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {

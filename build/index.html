@@ -685,6 +685,10 @@
         </div>
           `
         })
+      
+      const projectsdataLoaded  = new CustomEvent("projectsdataLoaded")
+      document.dispatchEvent(projectsdataLoaded)
+      
       })
     })
 

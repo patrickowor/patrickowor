@@ -57,8 +57,8 @@ var projects = [
         name : "MEDI PLANT",
         type : "app",
         other : "ai",
-        image : "assets/img/portfolio/1 copy.PNG",
-        moreimg : ["assets/img/portfolio/2.PNG"],
+        image : "assets/img/portfolio/1.PNG",
+        moreimg : ["assets/img/portfolio/1 copy.PNG","assets/img/portfolio/2.PNG"],
         link : "https://github.com/patrickowor/med_plant_backend",
         client : "personal",
         about : `Mediplant is your gateway to the rich heritage of African medicinal plants. We leverage cutting-edge AI and computer vision technology to empower you to identify these potent plants with ease.<br />
