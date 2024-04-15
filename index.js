@@ -71,7 +71,7 @@ app.get("/api/testimonials", async(req, res)=> {
     res.json(testimonials)
 })
 app.get("/api/projects", async(req, res)=> {
-    res.json(projects)
+        res.json(projects)
 })
 app.get("/api/projects/:id", async(req, res)=> {
     res.json(projects[Number(req.params.id)])
