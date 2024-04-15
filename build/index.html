@@ -632,8 +632,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+
   <script >
     fetch("/api/about").then( resp => {
       resp.json().then( obj => {
@@ -665,7 +664,8 @@
       })
     })
 
-    fetch("/api/projects").then( resp => {
+
+      fetch("/api/projects").then( resp => {
       resp.json().then( obj => {
         document.getElementById("project-row").innerHTML = ""
         obj.forEach((item, id)=>{
@@ -691,6 +691,7 @@
       
       })
     })
+ 
 
     fetch("/api/testimonials").then( resp => {
       resp.json().then( obj => {
@@ -712,7 +713,8 @@
       })
     })
   </script>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
