@@ -35,5 +35,5 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=patrickowor&show_icons=true&locale=en" alt="patrickowor" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=patrickowor&show_icons=true&locale=en" alt="patrickowor" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=patrickowor&" alt="patrickowor" /></p>
 
