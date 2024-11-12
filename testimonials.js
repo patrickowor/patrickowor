@@ -20,7 +20,7 @@ testimonials = [
         critical thinking and problem solving skills are top notch.
 
         He is also a great team player who believes everyone's contribution is vital. 
-        I highly recommend him for any role, I am confident he will be a great addition to any team.`
+        I highly recommend him for any role, I am confident he will be a great addition to any team.`,
         "name" : "Boluwatife Olasupo" ,
         "job" : "CEO, Illumino Nigeria | Techincal Support Engineer | EdTech EnthusiastTechincal Support Engineer | EdTech Enthusiast"
     }
