@@ -8,6 +8,7 @@ const cookieParser = require("cookie-parser");
 const testimonials = require("./testimonials")
 const projects = require("./projects")
 const nodemailer = require('nodemailer');
+const { resolve } = require('path');
 require('dotenv').config()
 
 
@@ -78,28 +79,35 @@ app.get("/api/projects/:id", async(req, res)=> {
 })
 
 app.post("/contact", async(req, res)=> {
-    const mailData = {
-        from: 'patrick.ikongha@gmail.com',  // sender address
-          to: 'patrick.ikongha@gmail.com',   // list of receivers
-          subject: "Portfolio message: " + req.body["subject"],
-          text : `from :${req.body["name"]} : ${req.body["email"]} \n ${req.body["message"]}`,
-          html: /* html */`
-            <h1 style="color : #3898ec; text-align: center;">${req.body["subject"]}</h1>
-            <p style="font-size : 20px; "> 
-                ${req.body["message"]} 
+    try {
 
-                <br/>----------------------------------------------
-                <br/><small style="font-size : 12px; ">${req.body["name"]} <br/> ${req.body["email"]}</small>
-            </p>
-
-            `,
-            
-        };
-    transporter.sendMail(mailData, function (err, info) {
-        if(err) res.send(err)
-        else res.send("OK")
+        const mailData = {
+            from: 'patrick.ikongha@gmail.com',  // sender address
+              to: 'patrick.ikongha@gmail.com',   // list of receivers
+              subject: "Portfolio message: " + req.body["subject"],
+              text : `from :${req.body["name"]} : ${req.body["email"]} \n ${req.body["message"]}`,
+              html: /* html */`
+                <h1 style="color : #3898ec; text-align: center;">${req.body["subject"]}</h1>
+                <p style="font-size : 20px; "> 
+                    ${req.body["message"]} 
+    
+                    <br/>----------------------------------------------
+                    <br/><small style="font-size : 12px; ">${req.body["name"]} <br/> ${req.body["email"]}</small>
+                </p>
+    
+                `,
+                
+            };
+        await new Promise((resolve, reject) =>transporter.sendMail(mailData, function (err, info) {
+            if(err) reject(err)
+            else resolve(info)       
+        })).catch((error) => {
+            console.log(error)
         });
-
+        res.sendStatus(200)
+    } catch (error) {
+        res.sendStatus(200)
+    }
     
 })
 
