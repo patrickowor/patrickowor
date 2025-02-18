@@ -11,13 +11,13 @@
 
 - 👯 I’m looking to collaborate on **Flourish Pay**
 
-- 👨‍💻 All of my projects are available at [https://patrickowor.onrender.com/#portfolio](https://patrickowor.onrender.com/#portfolio)
+- 👨‍💻 All of my projects are available in [my portfolio](https://patrickowor.onrender.com/#portfolio)
 
 - 💬 Ask me about **Python, Rust, Dart, Javascript and more**
 
 - 📫 How to reach me **patrick.ikongha@gmail.com**
 
-- 📄 Know about my experiences [https://patrickowor.onrender.com/](https://patrickowor.onrender.com/)
+- 📄 Know about my experiences [view my website](https://patrickowor.onrender.com/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

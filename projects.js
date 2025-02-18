@@ -1,6 +1,43 @@
 var projects = [
     {
-        name : "manilas market",
+        name : "Bankit Microfinance",
+        type : "web",
+        other: "app",
+        image : "assets/img/portfolio/bankit-3.png",
+        moreimg : ["assets/img/portfolio/bankit-1.png", "assets/img/portfolio/bankit-2.png"],
+        link : "https://apps.apple.com/ng/app/bankit/id6504249409",
+        client : "Bankit Africa",
+        about: `
+        Send money fast, pay bills, get big discounts and cashbacks.<br/>
+        Say goodbye to boring banking and hello to the excitement of levelling up your finances! With Bankit, every deposit, every goal reached, and every wise financial move earns you rewards. Watch your savings grow as you conquer financial challenges and unlock new achievements!
+        `
+    },
+    {
+        name : "Hermoney finance",
+        type : "web",
+        other: "app",
+        image : "assets/img/portfolio/hermoney-1.png",
+        moreimg : ["assets/img/portfolio/hermoney-2.png", "assets/img/portfolio/hermoney-3.png"],
+        link : "https://www.hermoney-finance.com/",
+        client : "Hermoney Finance",
+        about: `
+        HerMoney was founded with a clear vision: to create a financial services platform that understands and addresses the unique challenges of Individuals with a focus on Women.Our journey began with a passion for financial inclusion and a desire to make a tangible difference in the lives of women globally. We are driven by the belief that financial empowerment is key to unlocking potential and achieving personal and professional goals.
+        `
+    },
+    {
+        name : "OnboardPRO",
+        type : "web",
+        other: "app",
+        image : "assets/img/portfolio/onboardpro-2.png",
+        moreimg : ["assets/img/portfolio/onboardpro-1.png", "assets/img/portfolio/onboardpro-3.png", "assets/img/portfolio/onboardpro-4.png"],
+        link : "https://corporate-onboarding-web.vercel.app/",
+        client : "Codemania Nigeria",
+        about: `
+        OnboardPro is your gateway to seamless, efficieint and secure onboarding for individuals and businesses. Automate KYC and KYB processes, reduce compliance risks, and get customers set up in no time
+        `
+    },
+    {
+        name : "mandilas market",
         type : "web",
         image : "assets/img/portfolio/portfolio-1.png",
         moreimg : ["assets/img/portfolio/mandilas-2.png", "assets/img/portfolio/mandilas-3.png", "assets/img/portfolio/mandilas-api.png"],
@@ -27,7 +64,7 @@ var projects = [
         name : "Coockeroo",
         type : "app",
         image : "assets/img/portfolio/coockeroo-1.png",
-        link : "https://play.google.com/store/apps/details?id=com.erp.coockeroo&hl=en_IE",
+        link : "https://apps.apple.com/gb/app/coockeroo-cashier-erp-system/id1573490698",
         moreimg : ["assets/img/portfolio/coockeroo-3.png"],
         client : "Constantin Schmidt",
         about : `The Coockeroo Cashier & ERP Application is what Mom'n'Pop stores have been waiting for.
