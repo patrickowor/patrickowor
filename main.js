@@ -8,6 +8,4 @@ app.listen(port,host,  ()=>{
     console.log(`running server at http://192.168.86.86:${port}`)
 })
 
-
-
-
+module.exports = app;
