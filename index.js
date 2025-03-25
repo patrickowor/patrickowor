@@ -78,7 +78,7 @@ app.get("/api/projects/:id", async(req, res)=> {
     res.json(projects[Number(req.params.id)])
 })
 
-app.post("/contact", async(req, res)=> {
+const contactHandler = async(req, res)=> {
     try {
 
         const mailData = {
@@ -110,6 +110,9 @@ app.post("/contact", async(req, res)=> {
     }
     
 })
+
+app.post("/contact", contactHandler)
+app.post("/api/contact", contactHandler)
 
 app.use('/', express.static('./build'))
 
