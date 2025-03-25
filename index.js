@@ -109,7 +109,7 @@ const contactHandler = async(req, res)=> {
         res.sendStatus(200)
     }
     
-})
+}
 
 app.post("/contact", contactHandler)
 app.post("/api/contact", contactHandler)
